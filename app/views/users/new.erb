@@ -1,0 +1,15 @@
+
+<div class="error"><%= @user.errors.to_a.join(', ') %></div>
+
+<form id='user_signup' action='/users' method='post'>
+  <label for='name'>Enter your name:</label>
+  <input type='text' name='name' value="<%= @user.name %>"/><br />
+
+  <label for='email'>Enter your email:</label>
+  <input type='email' name='email' value="<%= @user.email %>"/><br />
+
+  <label for='password'>Create a password:</label>
+  <input type='password' name='password' /><br />
+
+  <input type='submit' value='Create a new user' />
+</form>
