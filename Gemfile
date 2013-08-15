@@ -7,8 +7,6 @@ gem 'pg'
 gem 'sinatra'
 gem 'sinatra-contrib'
 
-# Use Thin for our web server
-#gem 'thin'
 gem 'unicorn'
 
 gem 'activesupport'
@@ -19,6 +17,9 @@ gem 'rake'
 gem 'shotgun'
 
 gem 'bcrypt-ruby'
+
+gem 'carrierwave'
+gem "mini_magick"
 
 group :test do
   gem 'faker'
